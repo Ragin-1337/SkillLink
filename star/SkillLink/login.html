@@ -1,0 +1,36 @@
+<!-- ==============================
+     SkilLink - Login
+     ============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SkilLink</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <img src="assets/img/logo.png" alt="Logo SkilLink">
+        <h1>SkilLink</h1>
+        <p>Conecte-se ao seu aprendizado</p>
+      </div>
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="seu@email.com" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+
+        <button type="submit" class="btn-login">Entrar</button>
+      </form>
+      <p class="signup-link">Não tem uma conta? <a href="#" id="createAccount">Criar conta</a></p>
+      <p id="loginMsg" class="msg"></p>
+    </div>
+  </div>
+
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

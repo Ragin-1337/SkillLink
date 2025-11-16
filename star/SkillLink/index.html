@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkilLink — Conecte-se com Mentores</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <nav>
+        <div class="brand">
+          <div class="logo">S</div>
+          <div>
+            <h1>SkilLink</h1>
+            <p class="muted">Conectando alunos e mentores</p>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#mentores">Mentores</a>
+          <a href="#contato">Contato</a>
+          <a href="login.html" class="cta">Entrar</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Aprenda com os melhores mentores</h2>
+        <p class="muted">Encontre profissionais experientes para orientá-lo em sua jornada acadêmica e profissional. A conexão certa pode transformar o seu futuro.</p>
+        <div class="hero-ctas">
+          <a href="login.html" class="btn btn-primary">Começar agora</a>
+          <a href="#como-funciona" class="btn btn-ghost">Saiba mais</a>
+        </div>
+      </div>
+      <aside class="hero-image">
+        <img src="assets/img/hero-mentoria.png" alt="Ilustração mentoria" />
+      </aside>
+    </section>
+
+    <section id="como-funciona" class="features">
+      <h3>Como funciona</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>1. Crie seu perfil</h4>
+          <p>Cadastre-se e conte-nos sobre seus objetivos e áreas de interesse.</p>
+        </div>
+        <div class="feature-card">
+          <h4>2. Encontre um mentor</h4>
+          <p>Pesquise e escolha mentores com experiência no que você quer aprender.</p>
+        </div>
+        <div class="feature-card">
+          <h4>3. Agende sua mentoria</h4>
+          <p>Marque sessões e acompanhe seu progresso de forma simples e prática.</p>
+        </div>
+      </div>
+    </section>
+
+ <section class="mentores">
+  <h2>Mentores em destaque</h2>
+  <div class="mentores-container">
+    <div class="mentor-card">
+      <img src="assets/img/mentor1.jpg" alt="Mariana Souza">
+      <h3>Mariana Souza</h3>
+      <p>Design UX/UI</p>
+    </div>
+
+    <div class="mentor-card">
+      <img src="assets/img/mentor2.jpg" alt="Carlos Lima">
+      <h3>Carlos Lima</h3>
+      <p>Desenvolvimento Web</p>
+    </div>
+
+    <div class="mentor-card">
+      <img src="assets/img/mentor3.jpg" alt="Ana Ribeiro">
+      <h3>Ana Ribeiro</h3>
+      <p>Gestão de Projetos</p>
+    </div>
+  </div>
+</section>
+
+
+    <section id="contato" class="contact">
+      <h3>Entre em contato</h3>
+      <p class="muted">Tem dúvidas? Fale conosco e descubra como podemos ajudar.</p>
+      <form id="contactForm">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div id="formMsg" class="muted"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-content">
+      <p class="muted">© <span id="year"></span> SkilLink — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

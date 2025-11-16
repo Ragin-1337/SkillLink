@@ -1,0 +1,41 @@
+<!-- ==============================
+     SkilLink - Dashboard do Mentor
+     ============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Mentor - SkilLink</title>
+  <link rel="stylesheet" href="assets/css/mentor.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="Logo SkilLink" class="logo">
+        <h1>SkilLink</h1>
+      </div>
+      <button id="logoutBtn" class="logout">Sair</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h2>Bem-vindo, Mentor!</h2>
+      <p>Aqui você pode visualizar e gerenciar solicitações de alunos interessados em suas mentorias.</p>
+    </section>
+
+    <section class="requests">
+      <h3>Solicitações de Alunos</h3>
+      <div id="requestGrid" class="request-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> SkilLink. Conectando mentes e habilidades.</p>
+  </footer>
+
+  <script src="assets/js/mentor.js"></script>
+</body>
+</html>

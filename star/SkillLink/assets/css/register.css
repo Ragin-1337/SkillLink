@@ -1,0 +1,118 @@
+/* ==============================
+   SkilLink - Estilo de Cadastro
+   ============================== */
+
+:root {
+  --primary: #63B3FF;
+  --primary-deep: #1E90FF;
+  --bg: #f8fbff;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --radius: 14px;
+  --shadow: 0 8px 28px rgba(16,24,40,0.08);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container .card {
+  background: #fff;
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--primary-deep);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--primary);
+}
+
+.login-link {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: var(--primary-deep);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1000;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

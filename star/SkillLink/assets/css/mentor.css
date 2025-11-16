@@ -1,0 +1,169 @@
+/* ==============================
+   SkilLink - Estilo Mentor
+   ============================== */
+
+:root {
+  --primary: #63B3FF;
+  --primary-deep: #1E90FF;
+  --bg: #f8fbff;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --radius: 14px;
+  --shadow: 0 8px 28px rgba(16,24,40,0.08);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header {
+  background: #fff;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.logout {
+  background: var(--primary-deep);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout:hover {
+  background: var(--primary);
+}
+
+main {
+  padding: 40px 0;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.requests h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.request-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.request-card:hover {
+  transform: translateY(-5px);
+}
+
+.request-card h4 {
+  margin: 10px 0 5px;
+}
+
+.request-card p {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.request-card .actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.accept-btn, .reject-btn {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accept-btn {
+  background: var(--primary-deep);
+  color: #fff;
+}
+
+.accept-btn:hover {
+  background: var(--primary);
+}
+
+.reject-btn {
+  background: #e5e7eb;
+  color: var(--text);
+}
+
+.reject-btn:hover {
+  background: #d1d5db;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1000;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: var(--muted);
+}
